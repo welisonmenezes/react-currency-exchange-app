@@ -61,7 +61,11 @@ function Grid({ header, data, loading = false, error = null, actions = [] }) {
                                 <tr key={rowIndex}>
                                     {Object.keys(row).map((item, index) => {
                                         if (item.startsWith("_")) return null;
-                                        return <td key={index}>{row[item].toString()}</td>;
+                                        return (
+                                            <td key={index}>
+                                                {row[item].toString()}
+                                            </td>
+                                        );
                                     })}
                                     {actions.length > 0 && (
                                         <td className="col-actions">
