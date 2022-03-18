@@ -1,0 +1,3 @@
+export const HISTORY_ADD = "HISTORY_ADD";
+export const HISTORY_DELETE = "HISTORY_DELETE";
+export const HISTORY_GET_ALL = "HISTORY_GET_ALL";

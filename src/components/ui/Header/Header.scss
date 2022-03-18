@@ -1,0 +1,42 @@
+.Header {
+    .navbar {
+        background-color: white !important;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 1.5rem;
+    }
+
+    .nav-link {
+        position: relative;
+        margin-right: 1rem;
+
+        &.active {
+            color: var(--primary-color) !important;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                border-bottom: solid 1px var(--primary-color);
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Header {
+        .nav-link {
+            &::after {
+                display: none !important;
+            }
+        }
+    }
+}

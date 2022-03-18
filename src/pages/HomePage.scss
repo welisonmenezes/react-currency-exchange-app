@@ -1,0 +1,11 @@
+.HomePage {
+    .DisplayResult,
+    .FilterForm {
+        margin-bottom: 2rem;
+    }
+
+    > .spinner-border {
+        margin: 2rem auto;
+        display: block;
+    }
+}

@@ -1,0 +1,47 @@
+.FilterForm {
+    > div {
+        > div {
+            align-items: flex-end;
+
+            > div {
+                margin-bottom: 0 !important;
+                display: flex;
+                align-items: center;
+
+                label {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .col-radio {
+        max-width: 90px;
+        white-space: nowrap;
+        margin-bottom: 7px !important;
+
+        input {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .form-label {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .FilterForm {
+        > div {
+            > div {
+                > div {
+                    margin-bottom: 0.5rem !important;
+                }
+            }
+        }
+
+        .col-radio {
+            margin-bottom: 0 !important;
+        }
+    }
+}

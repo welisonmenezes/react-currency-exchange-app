@@ -1,0 +1,77 @@
+.ConvertForm {
+    .col {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+
+        > * {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        &.col-converter {
+            max-width: 72px;
+        }
+
+        &.col-submit {
+            max-width: 110px;
+        }
+    }
+
+    .btn {
+        &.btn-converter {
+            display: flex;
+            height: 38px;
+            align-items: center;
+            border-color: var(--primary-color);
+            background-color: white;
+
+            i {
+                height: 8px;
+                line-height: 8px;
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    .select {
+        > div {
+            border-color: var(--border-color);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .ConvertForm {
+        display: block !important;
+
+        .col {
+            display: block;
+            width: 100%;
+            margin-bottom: 0.5rem !important;
+
+            &.col-converter {
+                max-width: none;
+
+                .btn {
+                    width: auto;
+                    margin: 0 auto;
+                    transform: rotate(-90deg);
+                    width: 38px;
+                    justify-content: center;
+                    margin-top: 1.5rem;
+                }
+            }
+
+            &.col-submit {
+                max-width: none;
+
+                .btn {
+                    display: block;
+                    width: 100%;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}

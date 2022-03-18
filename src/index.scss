@@ -1,0 +1,76 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+    --primary-color: #009688;
+    --accent-color: #94c720;
+    --warn-color: #c70d38;
+    --text-color: #404040;
+    --header-color: #8d8d8d;
+    --border-color: #ced4da;
+}
+
+body {
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+
+    h1 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .form-check-input:checked {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+    .btn {
+        &.btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        &.btn-secondary {
+            background-color: var(--header-color);
+            border-color: var(--header-color);
+        }
+
+        &.btn-danger {
+            background-color: var(--warn-color);
+            border-color: var(--warn-color);
+        }
+    }
+
+    .spinner-border {
+        color: var(--border-color);
+    }
+
+    .btn {
+        &.disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        h1 {
+            font-size: 38px;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+}

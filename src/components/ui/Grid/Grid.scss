@@ -1,0 +1,65 @@
+.Grid {
+    width: 100%;
+    background-color: white;
+
+    .btn {
+        max-height: 28px;
+
+        i {
+            font-size: 0.8rem;
+        }
+
+        &:first-child {
+            margin-right: 0.5rem;
+        }
+    }
+
+    > tbody {
+        border-top: none !important;
+    }
+
+    tr {
+        &:hover {
+            td {
+                &.col-actions {
+                    .btn {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    th {
+        color: var(--header-color);
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    td {
+        color: var(--text-color);
+        font-size: 0.85rem;
+
+        &.col-actions {
+            height: 45px;
+
+            .btn {
+                display: none;
+            }
+        }
+    }
+
+    td,
+    th {
+        width: auto;
+        min-width: 110px;
+        vertical-align: middle;
+
+        &.col-actions {
+            width: 110px;
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
+}
