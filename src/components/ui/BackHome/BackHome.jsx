@@ -10,7 +10,7 @@ function BackHome({ message }) {
     return (
         <div className="BackHome">
             <p>{message}</p>
-            <NavLink to="/">
+            <NavLink to={`${process.env.PUBLIC_URL}`}>
                 <Icon icon="keyboard_backspace" />
                 Back To Home
             </NavLink>

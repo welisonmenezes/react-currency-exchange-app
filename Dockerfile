@@ -10,7 +10,7 @@ RUN npm run build
 # SERVER PRODUCTION ROUTINE
 FROM nginx:1.21.0-alpine as production
 ENV NODE_ENV production
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/build /usr/share/nginx/html/react-currency-exchange-app
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

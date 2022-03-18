@@ -56,7 +56,7 @@ function HistoryPage() {
                     })
                 );
                 resetFilter();
-                navigate("/");
+                navigate(process.env.PUBLIC_URL);
             }
         },
         [dispatch, getHistoryItemById, navigate, resetFilter]

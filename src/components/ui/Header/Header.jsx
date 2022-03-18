@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import {
     Navbar,
     NavbarBrand,
@@ -15,6 +15,7 @@ import "./Header.scss";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
 
     const toggleMenu = useCallback(() => {
         setIsOpen(!isOpen);
@@ -24,10 +25,22 @@ function Header() {
         setIsOpen(false);
     }, []);
 
+    const getHomeIsActiveClass = useCallback(() => {
+        const { pathname } = location;
+        return pathname === process.env.PUBLIC_URL ||
+            pathname === process.env.PUBLIC_URL + "/"
+            ? "active"
+            : "";
+    }, [location]);
+
     return (
         <header className="Header">
             <Navbar color="light" expand="md" light fixed="top" container="md">
-                <NavbarBrand to="/" tag={Link} onClick={closeMenu}>
+                <NavbarBrand
+                    to={process.env.PUBLIC_URL}
+                    tag={Link}
+                    onClick={closeMenu}
+                >
                     <Icon icon="attach_money" />
                     Exchanger
                 </NavbarBrand>
@@ -35,17 +48,18 @@ function Header() {
                 <Collapse navbar isOpen={isOpen}>
                     <Nav className="me-auto" navbar>
                         <NavItem>
-                            <NavLink
-                                to="/"
-                                className="nav-link"
+                            <Link
+                                to={process.env.PUBLIC_URL}
+                                className={`nav-link ${getHomeIsActiveClass()}`}
                                 onClick={closeMenu}
                             >
                                 Currency Converter
-                            </NavLink>
+                            </Link>
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                to="/history"
+                                end
+                                to={`${process.env.PUBLIC_URL}/history`}
                                 className="nav-link"
                                 onClick={closeMenu}
                             >
