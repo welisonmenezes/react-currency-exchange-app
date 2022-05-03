@@ -14,4 +14,4 @@ docker-compose up --build
 
 ### see the online demo
 
-https://welisonmenezes.github.io/react-currency-exchange-app
+https://welisonmenezes.github.io/welison-menezes-pq-assignment
