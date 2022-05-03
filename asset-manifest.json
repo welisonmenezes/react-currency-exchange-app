@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-currency-exchange-app/static/css/main.0280a57d.css",
-    "main.js": "/react-currency-exchange-app/static/js/main.efc124d5.js",
-    "static/js/787.aa8f8b6e.chunk.js": "/react-currency-exchange-app/static/js/787.aa8f8b6e.chunk.js",
-    "index.html": "/react-currency-exchange-app/index.html",
-    "main.0280a57d.css.map": "/react-currency-exchange-app/static/css/main.0280a57d.css.map",
-    "main.efc124d5.js.map": "/react-currency-exchange-app/static/js/main.efc124d5.js.map",
-    "787.aa8f8b6e.chunk.js.map": "/react-currency-exchange-app/static/js/787.aa8f8b6e.chunk.js.map"
+    "main.css": "/welison-menezes-pq-assignment/static/css/main.0280a57d.css",
+    "main.js": "/welison-menezes-pq-assignment/static/js/main.2ee01894.js",
+    "static/js/787.2a506242.chunk.js": "/welison-menezes-pq-assignment/static/js/787.2a506242.chunk.js",
+    "index.html": "/welison-menezes-pq-assignment/index.html",
+    "main.0280a57d.css.map": "/welison-menezes-pq-assignment/static/css/main.0280a57d.css.map",
+    "main.2ee01894.js.map": "/welison-menezes-pq-assignment/static/js/main.2ee01894.js.map",
+    "787.2a506242.chunk.js.map": "/welison-menezes-pq-assignment/static/js/787.2a506242.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0280a57d.css",
-    "static/js/main.efc124d5.js"
+    "static/js/main.2ee01894.js"
   ]
 }
